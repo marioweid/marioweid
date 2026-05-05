@@ -41,14 +41,10 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" />
 <img src="https://img.shields.io/badge/Pydantic_AI-E92063?style=flat-square&logo=pydantic&logoColor=white" />
 <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
 <img src="https://img.shields.io/badge/Anthropic-D97757?style=flat-square&logo=anthropic&logoColor=white" />
-<img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" />
 <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/Langfuse-2D2D2D?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" />
 
 </div>
 
@@ -60,7 +56,7 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 <img src="https://github-readme-stats.vercel.app/api?username=marioweid&show_icons=true&show=reviews,prs_merged,prs_merged_percentage&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&include_all_commits=true&count_private=true&rank_icon=percentile&card_width=520" alt="stats overview" />
 
-<sub>Letter grade (S+ → C) on the right is calculated by <a href="https://github.com/anuraghazra/github-readme-stats#showcasing-stats-rank">github-readme-stats</a> from commits, PRs, issues, reviews, stars and follower percentile.</sub>
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=marioweid)](https://github.com/anuraghazra/github-readme-stats)
 
 <br/><br/>
 
