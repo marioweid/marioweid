@@ -54,35 +54,17 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 ---
 
-### Stats
+### Overview
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=marioweid&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&include_all_commits=true&count_private=true" alt="stats" />
-<img height="180" src="https://streak-stats.demolab.com?user=marioweid&theme=tokyonight&hide_border=true&background=1a1b27&stroke=7aa2f7&ring=bb9af7&fire=f7768e&currStreakLabel=7aa2f7" alt="streak" />
+<img src="https://github-readme-stats.vercel.app/api?username=marioweid&show_icons=true&show=reviews,prs_merged,prs_merged_percentage&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&include_all_commits=true&count_private=true&rank_icon=percentile&card_width=520" alt="stats overview" />
 
-<br/>
-
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marioweid&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5&langs_count=10" alt="top langs" />
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=marioweid&theme=tokyonight&utcOffset=2" alt="productive time" />
+<sub>Letter grade (S+ → C) on the right is calculated by <a href="https://github.com/anuraghazra/github-readme-stats#showcasing-stats-rank">github-readme-stats</a> from commits, PRs, issues, reviews, stars and follower percentile.</sub>
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=marioweid&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="trophies" />
-
-</div>
-
----
-
-### Activity
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=marioweid&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=7aa2f7&line=bb9af7&point=f7768e&area=true&area_color=7aa2f7" width="98%" alt="activity graph" />
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/marioweid/marioweid/output/github-contribution-grid-snake-dark.svg" width="98%" alt="snake" />
+<img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marioweid&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5&langs_count=12&card_width=520" alt="top langs" />
 
 </div>
 
