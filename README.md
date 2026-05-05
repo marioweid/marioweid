@@ -70,34 +70,6 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 ---
 
-### Selected Work
-
-<div align="center">
-
-<a href="https://github.com/marioweid/goRAGnarok">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=goRAGnarok&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-<a href="https://github.com/marioweid/pydantic_ai_agentic_rag">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=pydantic_ai_agentic_rag&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-
-<a href="https://github.com/marioweid/handllman">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=handllman&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-<a href="https://github.com/marioweid/rbac_mlflow">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=rbac_mlflow&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-
-<a href="https://github.com/marioweid/evergreeen_multi_agents">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=evergreeen_multi_agents&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-<a href="https://github.com/marioweid/s3_bucket_to_parquet">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=marioweid&repo=s3_bucket_to_parquet&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5" />
-</a>
-
-</div>
-
----
 
 <div align="center">
 
