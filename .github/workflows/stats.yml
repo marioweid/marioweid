@@ -46,7 +46,7 @@ jobs:
           EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
           EXCLUDE_PRIVATE: "false"
           SILENT: "true"
-          MAX_RETRIES: "5"
+          MAX_RETRIES: "0"
         run: ./github-stats
 
       - name: Commit and push
