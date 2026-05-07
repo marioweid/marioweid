@@ -42,13 +42,12 @@ jobs:
       - name: Generate images
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          EXCLUDE_REPOS: "denoland/deno"
-          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
-          EXCLUDE_PRIVATE: "false"
-          SILENT: "false"
-          DEBUG: "true"
-          MAX_RETRIES: "0"
-        run: ./github-stats
+        run: |
+          ./github-stats \
+            --access-token "$ACCESS_TOKEN" \
+            --exclude-repos "denoland/*,mfmezger/*" \
+            --max-retries 0 \
+            --debug
 
       - name: Commit and push
         run: |
