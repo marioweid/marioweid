@@ -18,20 +18,29 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_STATS_VERSION: "2.0.1"
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
+          repository: jstrieb/github-stats
+          ref: master
+          path: github-stats-src
+          persist-credentials: false
+
+      - uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29  # v2
+        with:
+          version: 0.16.0
+
+      - name: Build github-stats from master
+        working-directory: github-stats-src
+        run: zig build --release=safe
+
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          path: profile-repo
           persist-credentials: true
 
-      - name: Download github-stats binary
-        run: |
-          curl --fail --location --output github-stats \
-            "https://github.com/jstrieb/github-stats/releases/download/${GITHUB_STATS_VERSION}/github-stats_x86_64-linux"
-          chmod +x github-stats
-
       - name: Checkout generated branch
+        working-directory: profile-repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -40,18 +49,18 @@ jobs:
           git rm -rf . 2>/dev/null || true
 
       - name: Generate images
+        working-directory: profile-repo
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          ./github-stats \
+          ../github-stats-src/zig-out/bin/github-stats \
             --access-token "$ACCESS_TOKEN" \
             --exclude-repos "denoland/*,mfmezger/*" \
-            --max-retries 0 \
-            --debug
+            --max-retries 0
 
       - name: Commit and push
+        working-directory: profile-repo
         run: |
-          rm -f github-stats
           git add overview.svg languages.svg
           git commit -m "Update generated stats" || exit 0
           git push --set-upstream origin generated
