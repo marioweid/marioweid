@@ -54,11 +54,10 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/marioweid/marioweid/generated/overview.svg" alt="stats overview" />
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/marioweid/marioweid/generated/languages.svg" alt="top langs" />
+<a href="https://github.com/marioweid">
+  <img height="200" src="https://raw.githubusercontent.com/marioweid/marioweid/generated/overview.svg" alt="stats overview" />
+  <img height="200" src="https://raw.githubusercontent.com/marioweid/marioweid/generated/languages.svg" alt="top langs" />
+</a>
 
 </div>
 
