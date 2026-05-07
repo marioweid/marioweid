@@ -1,0 +1,57 @@
+name: Generate Stats Images
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash -euo pipefail {0}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_STATS_VERSION: "2.0.1"
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: true
+
+      - name: Download github-stats binary
+        run: |
+          curl --fail --location --output github-stats \
+            "https://github.com/jstrieb/github-stats/releases/download/${GITHUB_STATS_VERSION}/github-stats_x86_64-linux"
+          chmod +x github-stats
+
+      - name: Checkout generated branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin generated || true
+          git checkout generated 2>/dev/null || git checkout --orphan generated
+          git rm -rf . 2>/dev/null || true
+
+      - name: Generate images
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
+          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
+          EXCLUDE_PRIVATE: "false"
+          SILENT: "true"
+          MAX_RETRIES: "5"
+        run: ./github-stats
+
+      - name: Commit and push
+        run: |
+          rm -f github-stats
+          git add overview.svg languages.svg
+          git commit -m "Update generated stats" || exit 0
+          git push --set-upstream origin generated

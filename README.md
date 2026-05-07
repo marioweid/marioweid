@@ -54,11 +54,11 @@ fueled_by:   coffee, curiosity, and questionable side projects
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=marioweid&show_icons=true&show=reviews,prs_merged,prs_merged_percentage&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&include_all_commits=true&count_private=true&rank_icon=percentile&card_width=520" alt="stats overview" />
+<img src="https://raw.githubusercontent.com/marioweid/marioweid/generated/overview.svg" alt="stats overview" />
 
 <br/><br/>
 
-<img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marioweid&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=7aa2f7&text_color=c0caf5&langs_count=12&card_width=520" alt="top langs" />
+<img src="https://raw.githubusercontent.com/marioweid/marioweid/generated/languages.svg" alt="top langs" />
 
 </div>
 
